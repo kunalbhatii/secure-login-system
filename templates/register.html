@@ -1,0 +1,15 @@
+<body style="text-align:center;">
+<h2>Register</h2>
+
+{% with messages = get_flashed_messages() %}
+<p>{{ messages[0] }}</p>
+{% endwith %}
+
+<form method="POST">
+<input name="username" placeholder="Username"><br><br>
+<input name="password" type="password" placeholder="Password"><br><br>
+<button>Register</button>
+</form>
+
+<a href="/">Home</a>
+</body>
